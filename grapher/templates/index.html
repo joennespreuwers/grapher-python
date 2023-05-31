@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Plot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dist/css/output.css') }}" />
+  </head>
+  <body class="flex flex-col items-center justify-center h-screen bg-gray-50">
+    <h1 class="text-4xl text-gray-700 animate-pulse font-bold mb-8">Plot with Matplotlib</h1>
+    <form method="POST" action="/" class="flex items-center mb-4 drop-shadow-md">
+      <input
+        type="text"
+        name="form_1"
+        class="rounded-l-lg py-2 px-4 bg-gray-400 text-white focus:outline-none hover:bg-gray-500"
+        value="{{ request.form.form_1 }}"
+      />
+      <button type="submit" class="px-4 py-2 bg-indigo-400 hover:bg-indigo-500 text-white rounded-r-lg">Submit</button>
+    </form>
+    <img src="data:image/png;base64,{{ image_data }}" alt="Plot" class="rounded-md drop-shadow-lg" />
+  </body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "name": "grapher-python",
+  "version": "1.0.0",
+  "description": "A grapher made with Python and Flask",
+  "main": "app.py",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./grapher/static/src/input.css -o ./grapher/static/dist/css/output.css",
+    "watch:css": "npx tailwindcss -i ./grapher/static/src/input.css -o ./grapher/static/dist/css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joennespreuwers/grapher-python.git"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": [
+    "Grapher",
+    "python",
+    "flask",
+    "tailwindcss",
+    "tailwind",
+    "matplotlib"
+  ],
+  "author": "Joenne Spreuwers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joennespreuwers/grapher-python/issues"
+  },
+  "homepage": "https://github.com/joennespreuwers/grapher-python#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}

@@ -19,7 +19,7 @@ def index():
             print(f)
             image_data = plot(f)
         else:
-            image_data = plot("x")
+            image_data = plot()
 
     return render_template("index.html", image_data=image_data)
 

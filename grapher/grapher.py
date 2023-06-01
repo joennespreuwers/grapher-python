@@ -10,7 +10,7 @@ def plot(f: str = "x"):
     print(f)
     fig = Figure()
     axis = fig.add_subplot(1, 1, 1)
-    x = np.linspace(-10, 10, 100)
+    x = np.linspace(-10, 10, 1000)
     y = np.vectorize(lambdify(symbols("x"), sympify(f)))(x)
     axis.plot(x, y, label=f"y={f}")
 
